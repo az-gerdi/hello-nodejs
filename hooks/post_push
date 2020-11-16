@@ -4,4 +4,4 @@ while read tag; do
     echo "Tagging image ${IMAGE_NAME} as '${tag}'"
     docker tag $IMAGE_NAME $DOCKER_REPO:$tag
     docker push $DOCKER_REPO:$tag
-done < additional_tags.list
+done
