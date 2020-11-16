@@ -1,7 +1,0 @@
-#!/bin/bash
-
-for tag in {0.1.0, latest};
-    do
-        docker tag $IMAGE_NAME $DOCKER_REPO:$tag
-        docker push $DOCKER_REPO:$tag
-    done
